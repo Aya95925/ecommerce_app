@@ -1,4 +1,7 @@
+import 'package:ecommerce_app/feature/splash/presentation/view/splash_view.dart';
+import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const FruitMarket());
@@ -9,6 +12,17 @@ class FruitMarket extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home:Container());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      locale: const Locale('ar'),
+      localizationsDelegates: const [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
+      home: SplashView(),
+    );
   }
 }
