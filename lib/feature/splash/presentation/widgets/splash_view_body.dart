@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/core/app_assets.dart';
+import 'package:ecommerce_app/core/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -13,15 +13,13 @@ class SplashViewBody extends StatelessWidget {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            SvgPicture.asset(AppAssets.assetsImagesFreepikPlantInject63),
-          ],
+          children: [SvgPicture.asset(Assets.assetsImagesFreepikPlantInject)],
         ),
-        SvgPicture.asset(AppAssets.assetsImagesSplashImage),
+        SvgPicture.asset(Assets.assetsImagesSplashImage),
         Row(
           children: [
             SvgPicture.asset(
-              AppAssets.assetsImagesFreepikCirclesInject5,
+              Assets.assetsImagesFreepikCirclesInject,
               fit: BoxFit.fill,
             ),
           ],

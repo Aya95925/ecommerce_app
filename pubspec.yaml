@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.8
+  dots_indicator: ^4.0.1
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -78,9 +79,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
-
 # إعدادات إضافة Flutter Assets Gen (خارج قسم flutter الرئيسي وبمحاذاة صحيحة)
 flutter_assets:
   assets_path: assets/images
-  output_path: lib/core
+  output_path: lib/core/utils
   filename: app_assets.dart
