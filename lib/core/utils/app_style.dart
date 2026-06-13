@@ -26,4 +26,10 @@ abstract final class AppStyle {
     fontFamily: 'Cairo',
     fontWeight: FontWeight.w700,
   );
+  static const TextStyle grey19Bold = TextStyle(
+    color:AppColor.greyScale950 /* Grayscale-950 */,
+    fontSize: 19,
+    fontFamily: 'Cairo',
+    fontWeight: FontWeight.w700,
+  );
 }

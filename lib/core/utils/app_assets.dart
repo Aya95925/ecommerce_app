@@ -6,6 +6,22 @@ class Assets {
   /// assets/images/app_icon.png
   static const String assetsImagesAppIcon = "assets/images/app_icon.png";
 
+  /// Assets for assetsImagesAppleIcon
+  /// assets/images/apple_icon.svg
+  static const String assetsImagesAppleIcon = "assets/images/apple_icon.svg";
+
+  /// Assets for assetsImagesCorrect
+  /// assets/images/correct.svg
+  static const String assetsImagesCorrect = "assets/images/correct.svg";
+
+  /// Assets for assetsImagesEye
+  /// assets/images/Eye.svg
+  static const String assetsImagesEye = "assets/images/Eye.svg";
+
+  /// Assets for assetsImagesFacebookIcons
+  /// assets/images/facebook_Icons.svg
+  static const String assetsImagesFacebookIcons = "assets/images/facebook_Icons.svg";
+
   /// Assets for assetsImagesFreepikCirclesInject
   /// assets/images/freepik_circles_inject.svg
   static const String assetsImagesFreepikCirclesInject = "assets/images/freepik_circles_inject.svg";
@@ -17,6 +33,10 @@ class Assets {
   /// Assets for assetsImagesFreepikPlantInject
   /// assets/images/freepik_plant_inject.svg
   static const String assetsImagesFreepikPlantInject = "assets/images/freepik_plant_inject.svg";
+
+  /// Assets for assetsImagesGooglIcons
+  /// assets/images/Googl_Icons.svg
+  static const String assetsImagesGooglIcons = "assets/images/Googl_Icons.svg";
 
   /// Assets for assetsImagesPineappleCuate
   /// assets/images/pineapple-cuate.svg
