@@ -1,5 +1,5 @@
-
 import 'package:ecommerce_app/feature/auth/presentation/view/login_view.dart';
+import 'package:ecommerce_app/feature/auth/presentation/view/reset_your_password_view.dart';
 import 'package:ecommerce_app/feature/splash/presentation/view/splash_view.dart';
 import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
@@ -24,9 +24,9 @@ class FruitMarket extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      home: 
+      home: ResetYourPasswordView(),
       // LoginView(),
-      SplashView(),
+      // SplashView(),
     );
   }
 }
