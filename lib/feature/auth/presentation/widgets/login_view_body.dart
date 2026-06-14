@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/core/utils/app_assets.dart';
-
+import 'package:ecommerce_app/core/utils/app_route.dart';
 import 'package:ecommerce_app/core/utils/app_style.dart';
+import 'package:ecommerce_app/feature/auth/presentation/widgets/auth_prompt_row.dart';
 import 'package:ecommerce_app/feature/auth/presentation/widgets/custom_container_buttom.dart';
 import 'package:ecommerce_app/feature/auth/presentation/widgets/custom_container_social_media.dart';
 import 'package:ecommerce_app/feature/auth/presentation/widgets/custom_divider.dart';
@@ -18,7 +19,7 @@ class LoginViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
       child: Column(
         children: [
-          CustomLoginAppBar(),
+          CustomLoginAppBar(text: 'تسجيل دخول'),
           SizedBox(height: 24),
           CustomTextFormField(hintText: 'البريد الإلكتروني'),
           SizedBox(height: 16),
@@ -37,20 +38,14 @@ class LoginViewBody extends StatelessWidget {
             child: Text('نسيت كلمة المرور؟', style: AppStyle.green13semiBold),
           ),
           SizedBox(height: 33),
-          CustomContainerButtom(),
+          CustomContainerButtom(text: 'تسجيل دخول'),
           SizedBox(height: 33),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'لاتمتلك حساب؟',
-                style: AppStyle.grey13SemiBold.copyWith(fontSize: 16),
-              ),
-              Text(
-                'قم بانشاء حساب',
-                style: AppStyle.green13semiBold.copyWith(fontSize: 16),
-              ),
-            ],
+          AuthPromptRow(
+            text: 'لاتمتلك حساب؟',
+            buttom: 'قم بانشاء حساب',
+            onTap: () {
+              Navigator.push(context, AppRoute.signUp);
+            },
           ),
           SizedBox(height: 49),
           CustomDivider(),

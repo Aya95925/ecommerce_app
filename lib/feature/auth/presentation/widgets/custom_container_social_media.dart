@@ -21,7 +21,7 @@ class CustomContainerSocialMedia extends StatelessWidget {
       ),
       child: Row(
         children: [
-          SvgPicture.asset(image, height: 16),
+          SvgPicture.asset(image, height: 28),
           Expanded(
             child: Center(
               child: Text(text, style: AppStyle.greyScale16SemiBold),

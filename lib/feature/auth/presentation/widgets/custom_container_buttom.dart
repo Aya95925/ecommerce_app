@@ -3,8 +3,8 @@ import 'package:ecommerce_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainerButtom extends StatelessWidget {
-  const CustomContainerButtom({super.key});
-
+  const CustomContainerButtom({super.key, required this.text});
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Container(
