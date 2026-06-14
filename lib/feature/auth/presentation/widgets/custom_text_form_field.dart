@@ -10,10 +10,10 @@ class CustomTextFormField extends StatelessWidget {
 
   const CustomTextFormField({
     super.key,
-    required this.hintText, // النص التوضيحي داخل الحقل
-    this.keyboardType, // نوع لوحة المفاتيح (إيميل، أرقام، إلخ)
-    this.suffixIcon, // أيقونة في نهاية الحقل (مثل العين في كلمة المرور)
-    this.obscureText = false, // لإخفاء الكتابة (في حال كان حقل كلمة مرور)
+    required this.hintText,
+    this.keyboardType,
+    this.suffixIcon,
+    this.obscureText = false,
   });
 
   @override
@@ -21,7 +21,7 @@ class CustomTextFormField extends StatelessWidget {
     return TextFormField(
       keyboardType: keyboardType,
       obscureText: obscureText,
-      textAlign: TextAlign.right, // لجعل الكتابة تبدأ من اليمين (عربي)
+      textAlign: TextAlign.right,
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: AppStyle.grey13SemiBold.copyWith(
@@ -31,22 +31,19 @@ class CustomTextFormField extends StatelessWidget {
 
         filled: true,
         fillColor: AppColor.whittgrey,
-        // الحدود في الحالة الطبيعية
+
         border: buildBorder(),
-        // الحدود عند الضغط على الحقل (Active)
+
         enabledBorder: buildBorder(),
-        // الحدود عند التركيز والكتابة
-        focusedBorder: buildBorder(
-          // color: const Color(0xFF1B5E37),
-        ), // لون أخضر عند التحديد (اختياري)
+
+        focusedBorder: buildBorder(),
       ),
     );
   }
 
-  // دالة لتجنب تكرار كود الحدود (Border)
   OutlineInputBorder buildBorder({Color color = AppColor.whitegrey1}) {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(4), // حواف دائرية خفيفة مثل Figma
+      borderRadius: BorderRadius.circular(4),
       borderSide: BorderSide(color: color, width: 1),
     );
   }

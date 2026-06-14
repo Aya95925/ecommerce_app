@@ -24,8 +24,9 @@ class FruitMarket extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      home: LoginView(),
-      // SplashView(),
+      home: 
+      // LoginView(),
+      SplashView(),
     );
   }
 }

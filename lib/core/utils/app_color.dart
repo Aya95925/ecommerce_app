@@ -9,4 +9,5 @@ abstract final class AppColor {
   static const Color whittgrey = Color(0xFFE6E9EA);
   static const Color whitegrey1 = Color(0xffE6E9EA);
   static const Color dividerGrey = Color(0xffDDDFDF);
+  static const Color greyScale600 = Color(0xff616A6B);
 }

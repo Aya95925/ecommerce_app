@@ -1,4 +1,6 @@
+import 'package:ecommerce_app/feature/auth/presentation/view/forget_password_view.dart';
 import 'package:ecommerce_app/feature/auth/presentation/view/login_view.dart';
+import 'package:ecommerce_app/feature/auth/presentation/view/password_recovery_view.dart';
 import 'package:ecommerce_app/feature/auth/presentation/view/sign_up_view.dart';
 import 'package:ecommerce_app/feature/onboarding/presentation/view/onboarding_view.dart';
 import 'package:ecommerce_app/feature/splash/presentation/view/splash_view.dart';
@@ -13,4 +15,10 @@ abstract final class AppRoute {
   );
   static final loginView = MaterialPageRoute(builder: (context) => LoginView());
   static final signUp = MaterialPageRoute(builder: (context) => SignUp());
+  static final forgetPasswordView = MaterialPageRoute(
+    builder: (context) => ForgetPasswordView(),
+  );
+  static final passwordRecoveryView = MaterialPageRoute(
+    builder: (context) => PasswordRecoveryView(),
+  );
 }

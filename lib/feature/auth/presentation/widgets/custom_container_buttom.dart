@@ -18,7 +18,7 @@ class CustomContainerButtom extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 12),
         child: Center(
           child: Text(
-            'تسجيل دخول',
+            text,
             textAlign: TextAlign.center,
             style: AppStyle.white16Bold,
           ),

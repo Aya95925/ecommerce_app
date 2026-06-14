@@ -16,13 +16,9 @@ class SplashViewBody extends StatelessWidget {
           children: [SvgPicture.asset(Assets.assetsImagesFreepikPlantInject)],
         ),
         SvgPicture.asset(Assets.assetsImagesSplashImage),
-        Row(
-          children: [
-            SvgPicture.asset(
-              Assets.assetsImagesFreepikCirclesInject,
-              fit: BoxFit.fill,
-            ),
-          ],
+        SvgPicture.asset(
+          Assets.assetsImagesFreepikCirclesInject,
+          fit: BoxFit.fill,
         ),
       ],
     );

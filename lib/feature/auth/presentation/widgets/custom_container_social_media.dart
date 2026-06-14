@@ -24,7 +24,10 @@ class CustomContainerSocialMedia extends StatelessWidget {
           SvgPicture.asset(image, height: 28),
           Expanded(
             child: Center(
-              child: Text(text, style: AppStyle.greyScale16SemiBold),
+              child: Text(
+                text,
+                style: AppStyle.greyScale23SemiBold.copyWith(fontSize: 16),
+              ),
             ),
           ),
         ],
@@ -32,3 +35,4 @@ class CustomContainerSocialMedia extends StatelessWidget {
     );
   }
 }
+
