@@ -1,4 +1,6 @@
+
 import 'package:ecommerce_app/feature/auth/presentation/view/login_view.dart';
+import 'package:ecommerce_app/feature/splash/presentation/view/splash_view.dart';
 import 'package:ecommerce_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -23,6 +25,7 @@ class FruitMarket extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       home: LoginView(),
+      // SplashView(),
     );
   }
 }
