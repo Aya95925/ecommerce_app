@@ -1,10 +1,14 @@
 import 'package:ecommerce_app/feature/auth/presentation/view/forget_password_view.dart';
 import 'package:ecommerce_app/feature/auth/presentation/view/login_view.dart';
 import 'package:ecommerce_app/feature/auth/presentation/view/password_recovery_view.dart';
+import 'package:ecommerce_app/feature/auth/presentation/view/reset_your_password_view.dart';
 import 'package:ecommerce_app/feature/auth/presentation/view/sign_up_view.dart';
+import 'package:ecommerce_app/feature/home/presentation/view/more_popular_view.dart';
 import 'package:ecommerce_app/feature/onboarding/presentation/view/onboarding_view.dart';
 import 'package:ecommerce_app/feature/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
+
+import '../../feature/main_layout/presentation/view/main_layout_view.dart';
 
 abstract final class AppRoute {
   static final splashRoute = MaterialPageRoute(
@@ -20,5 +24,14 @@ abstract final class AppRoute {
   );
   static final passwordRecoveryView = MaterialPageRoute(
     builder: (context) => PasswordRecoveryView(),
+  );
+  static final resetPassword = MaterialPageRoute(
+    builder: (context) => ResetYourPasswordView(),
+  );
+  static final homeView = MaterialPageRoute(
+    builder: (context) => MainLayoutView(),
+  );
+  static final morePopularBody = MaterialPageRoute(
+    builder: (context) => MorePopularView(),
   );
 }

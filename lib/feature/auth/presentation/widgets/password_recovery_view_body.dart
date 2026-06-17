@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/core/utils/app_color.dart';
+import 'package:ecommerce_app/core/utils/app_route.dart';
 import 'package:ecommerce_app/core/utils/app_style.dart';
 import 'package:ecommerce_app/feature/auth/presentation/widgets/custom_container_buttom.dart';
 import 'package:ecommerce_app/feature/auth/presentation/widgets/custom_login_appbar.dart';
@@ -124,7 +125,12 @@ class _PasswordRecoveryViewBodyState extends State<PasswordRecoveryViewBody> {
 
           const SizedBox(height: 30),
 
-          CustomContainerButtom(text: 'تحقق من الرمز'),
+          CustomContainerButtom(
+            text: 'تحقق من الرمز',
+            onTap: () {
+              Navigator.push(context, AppRoute.resetPassword);
+            },
+          ),
 
           const SizedBox(height: 24),
 
