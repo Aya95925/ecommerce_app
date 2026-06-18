@@ -1,11 +1,10 @@
-
 import 'package:ecommerce_app/core/utils/app_color.dart';
 import 'package:ecommerce_app/core/utils/app_style.dart';
 import 'package:ecommerce_app/feature/home/presentation/view/widgets/Custom_notifacaton_container.dart';
 import 'package:flutter/material.dart';
 
-class CustomHomeAppBar extends StatelessWidget {
-  const CustomHomeAppBar({super.key, required this.text, this.onPressed});
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({super.key, required this.text, this.onPressed});
   final String text;
   final Function()? onPressed;
   @override
@@ -46,4 +45,3 @@ class CustomHomeAppBar extends StatelessWidget {
     );
   }
 }
-

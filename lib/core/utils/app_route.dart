@@ -5,6 +5,9 @@ import 'package:ecommerce_app/feature/auth/presentation/view/reset_your_password
 import 'package:ecommerce_app/feature/auth/presentation/view/sign_up_view.dart';
 import 'package:ecommerce_app/feature/home/presentation/view/more_popular_view.dart';
 import 'package:ecommerce_app/feature/onboarding/presentation/view/onboarding_view.dart';
+import 'package:ecommerce_app/feature/search/presentation/view/recent_search_view.dart';
+import 'package:ecommerce_app/feature/search/presentation/view/search_without_result_view.dart';
+import 'package:ecommerce_app/feature/search/presentation/view/widget/search_view_body.dart';
 import 'package:ecommerce_app/feature/splash/presentation/view/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -34,4 +37,16 @@ abstract final class AppRoute {
   static final morePopularBody = MaterialPageRoute(
     builder: (context) => MorePopularView(),
   );
+    static final recentSearch = MaterialPageRoute(
+    builder: (context) => RecentSearchView(),
+  );
+    static final searchView = MaterialPageRoute(
+    builder: (context) => SearchViewBody(),
+  );
+      static final searchWithOutResult = MaterialPageRoute(
+    builder: (context) =>SearchWithoutResultView(),
+  );
+  
+  
+
 }

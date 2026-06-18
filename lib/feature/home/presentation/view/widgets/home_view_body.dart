@@ -12,28 +12,30 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 21),
-      child: Column(
-        children: [
-          CustomAppBarHome(),
-          SizedBox(height: 16),
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            CustomAppBarHome(),
+            SizedBox(height: 16),
 
-          CustomSearchTextFormField(),
-          SizedBox(height: 12),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text('الأكثر مبيعًا', style: AppStyle.greyScale16Bold),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context, AppRoute.morePopularBody);
-                },
-                child: Text('المزيد', style: AppStyle.grey13Regular),
-              ),
-            ],
-          ),
-          SizedBox(height: 12),
-          Expanded(child: CustomGridViewProductCard()),
-        ],
+            CustomSearchTextFormField(),
+            SizedBox(height: 12),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('الأكثر مبيعًا', style: AppStyle.greyScale16Bold),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(context, AppRoute.morePopularBody);
+                  },
+                  child: Text('المزيد', style: AppStyle.grey13Regular),
+                ),
+              ],
+            ),
+            SizedBox(height: 12),
+            CustomGridViewProductCard(),
+          ],
+        ),
       ),
     );
   }
