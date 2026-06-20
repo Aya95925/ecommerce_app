@@ -21,7 +21,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
               'لا تقلق ، ما عليك سوى كتابة رقم هاتفك وسنرسل رمز التحقق.',
               textAlign: TextAlign.right,
               maxLines: 2,
-              style: AppStyle.grey16SemiBold,
+              style: AppStyle.greyScale60016SemiBold,
             ),
             SizedBox(height: 31),
             CustomTextFormField(hintText: 'ادخل رقم هاتفك'),

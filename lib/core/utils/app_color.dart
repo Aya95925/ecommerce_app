@@ -13,5 +13,6 @@ abstract final class AppColor {
   static const Color greyBorder = Color(0xfff1f1f5);
   static const Color green50 = Color(0xffEEF8ED);
   static const Color grey = Color(0xffEEEEEE);
-
+  static const Color green150 = Color(0xffEBF9F1);
+  static const Color red = Color(0xffEB5757);
 }

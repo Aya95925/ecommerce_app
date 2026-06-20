@@ -62,7 +62,7 @@ class _PasswordRecoveryViewBodyState extends State<PasswordRecoveryViewBody> {
           const SizedBox(height: 30),
           Text(
             'أدخل الرمز الذي أرسلناه إلى عنوان بريد التالي Maxxx@email.com',
-            style: AppStyle.grey16SemiBold,
+            style: AppStyle.greyScale60016SemiBold,
           ),
           const SizedBox(height: 29),
 
