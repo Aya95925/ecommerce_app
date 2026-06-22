@@ -1,10 +1,10 @@
 import 'package:ecommerce_app/core/widgets/custom_appbar.dart';
 import 'package:ecommerce_app/core/widgets/custom_search_text_form_field.dart';
 import 'package:ecommerce_app/core/widgets/more_popular.dart';
+import 'package:ecommerce_app/feature/home/presentation/view/widgets/custom_grid_view_prosuct_card.dart';
 import 'package:ecommerce_app/feature/products/presentation/view/widget/custom_list_view_my_product_item.dart';
 import 'package:ecommerce_app/feature/products/presentation/view/widget/my_product.dart';
 import 'package:flutter/material.dart';
-
 
 class ProductViewBody extends StatelessWidget {
   const ProductViewBody({super.key});
@@ -21,15 +21,17 @@ class ProductViewBody extends StatelessWidget {
             SizedBox(height: 20),
             CustomSearchTextFormField(),
             SizedBox(height: 16),
-            MyProduct(),
+            MyProduct(text: '4 نتائج'),
             SizedBox(height: 8),
-            CustomListViewMyProductItem(),
-            SizedBox(height: 16),
-            MorePopular(isShowMore: true),
+            CustomGridViewProductCard(),
+            // MyProduct(text: 'منتجاتنا'),
+            // SizedBox(height: 8),
+            // CustomListViewMyProductItem(),
+            // SizedBox(height: 16),
+            // MorePopular(isShowMore: true),
           ],
         ),
       ),
     );
   }
 }
-
