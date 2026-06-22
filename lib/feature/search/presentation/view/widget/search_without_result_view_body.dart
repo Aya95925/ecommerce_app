@@ -1,5 +1,5 @@
 import 'package:ecommerce_app/core/widgets/custom_appbar.dart';
-import 'package:ecommerce_app/feature/home/presentation/view/widgets/custom_search_text_form_field.dart';
+import 'package:ecommerce_app/core/widgets/custom_search_text_form_field.dart';
 import 'package:ecommerce_app/feature/search/presentation/view/widget/not_result.dart';
 import 'package:ecommerce_app/feature/search/presentation/view/widget/not_result_icon_search.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +14,7 @@ class SearchWithoutResultViewBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 16),
-          CustomAppBar(text: 'البحث'),
+          CustomAppBar(text: 'البحث', showBackButton: true,),
           CustomSearchTextFormField(),
           SizedBox(height: 16),
           NotResult(),

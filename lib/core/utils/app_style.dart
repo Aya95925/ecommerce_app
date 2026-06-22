@@ -33,6 +33,12 @@ abstract final class AppStyle {
     fontFamily: 'Cairo',
     fontWeight: FontWeight.w600,
   );
+    static const TextStyle greyScale13SemiBold = TextStyle(
+    color: AppColor.greyScale950,
+    fontSize: 13,
+    fontFamily: 'Cairo',
+    fontWeight: FontWeight.w600,
+  );
   static const TextStyle greyScale16Bold = TextStyle(
     color: AppColor.greyScale950,
     fontSize: 16,

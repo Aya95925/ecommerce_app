@@ -4,9 +4,15 @@ import 'package:ecommerce_app/feature/home/presentation/view/widgets/Custom_noti
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.text, this.onPressed});
+  const CustomAppBar({
+    super.key,
+    required this.text,
+    this.onPressed, required this.showBackButton,
+    
+  });
   final String text;
   final Function()? onPressed;
+  final bool showBackButton;
   @override
   @override
   Widget build(BuildContext context) {
@@ -23,7 +29,7 @@ class CustomAppBar extends StatelessWidget {
 
           Positioned(
             right: 0,
-            child: Container(
+            child: showBackButton? Container(
               width: 44,
               height: 44,
               decoration: BoxDecoration(
@@ -38,7 +44,7 @@ class CustomAppBar extends StatelessWidget {
                   color: AppColor.greyScale950,
                 ),
               ),
-            ),
+            ):SizedBox(),
           ),
         ],
       ),

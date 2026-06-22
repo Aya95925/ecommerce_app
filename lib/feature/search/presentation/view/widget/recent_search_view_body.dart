@@ -1,6 +1,6 @@
 import 'package:ecommerce_app/core/utils/app_style.dart';
 import 'package:ecommerce_app/core/widgets/custom_appbar.dart';
-import 'package:ecommerce_app/feature/home/presentation/view/widgets/custom_search_text_form_field.dart';
+import 'package:ecommerce_app/core/widgets/custom_search_text_form_field.dart';
 import 'package:ecommerce_app/feature/search/presentation/view/widget/Custom_list_view_builder.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +16,7 @@ class RecentSearchViewBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 16),
-            CustomAppBar(text: 'البحث'),
+            CustomAppBar(text: 'البحث', showBackButton: true,),
             SizedBox(height: 16),
             CustomSearchTextFormField(),
             SizedBox(height: 24),

@@ -1,5 +1,6 @@
-import 'package:ecommerce_app/core/utils/app_style.dart';
-import 'package:ecommerce_app/feature/home/presentation/view/widgets/custom_grid_view_prosuct_card.dart';
+
+import 'package:ecommerce_app/core/widgets/more_popular.dart';
+
 import 'package:ecommerce_app/core/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 
@@ -13,14 +14,13 @@ class MorePopularBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CustomAppBar(text: 'الأكثر مبيعًا'),
+            CustomAppBar(text: 'الأكثر مبيعًا', showBackButton: true),
             SizedBox(height: 24),
-            Text('الأكثر مبيعًا', style: AppStyle.greyScale16Bold),
-            SizedBox(height: 8),
-            CustomGridViewProductCard(),
+           MorePopular(isShowMore: false,)
           ],
         ),
       ),
     );
   }
 }
+

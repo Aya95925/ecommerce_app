@@ -1,8 +1,9 @@
 import 'package:ecommerce_app/core/utils/app_route.dart';
 import 'package:ecommerce_app/core/utils/app_style.dart';
+import 'package:ecommerce_app/core/widgets/more_popular.dart';
 import 'package:ecommerce_app/feature/home/presentation/view/widgets/custom_appbar_home.dart';
 import 'package:ecommerce_app/feature/home/presentation/view/widgets/custom_grid_view_prosuct_card.dart';
-import 'package:ecommerce_app/feature/home/presentation/view/widgets/custom_search_text_form_field.dart';
+import 'package:ecommerce_app/core/widgets/custom_search_text_form_field.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -20,20 +21,7 @@ class HomeViewBody extends StatelessWidget {
 
             CustomSearchTextFormField(),
             SizedBox(height: 12),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('الأكثر مبيعًا', style: AppStyle.greyScale16Bold),
-                InkWell(
-                  onTap: () {
-                    Navigator.push(context, AppRoute.morePopularBody);
-                  },
-                  child: Text('المزيد', style: AppStyle.grey13Regular),
-                ),
-              ],
-            ),
-            SizedBox(height: 12),
-            CustomGridViewProductCard(),
+           MorePopular(isShowMore: true)
           ],
         ),
       ),

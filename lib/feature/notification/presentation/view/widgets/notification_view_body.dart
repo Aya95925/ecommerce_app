@@ -14,7 +14,7 @@ class NotificationViewBody extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 20),
-            CustomAppBar(text: 'الاشعارات'),
+            CustomAppBar(text: 'الاشعارات', showBackButton: true),
             SizedBox(height: 20),
             NotificationHeader(notificationCount: 2, text: 'جديد'),
             SizedBox(height: 11),
