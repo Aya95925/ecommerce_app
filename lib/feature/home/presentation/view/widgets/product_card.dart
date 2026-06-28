@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/core/utils/app_assets.dart';
 import 'package:ecommerce_app/core/utils/app_color.dart';
 import 'package:ecommerce_app/core/utils/app_style.dart';
+import 'package:ecommerce_app/core/widgets/custom_circle_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -80,15 +81,7 @@ class ProductCard extends StatelessWidget {
                       ],
                     ),
 
-                    CircleAvatar(
-                      radius: 18,
-                      backgroundColor: AppColor.green500,
-                      child: const Icon(
-                        Icons.add,
-                        color: Colors.white,
-                        size: 20,
-                      ),
-                    ),
+                    CustomCircleAddIcon(icon: Icons.add, onTap: () {}),
                   ],
                 ),
               ],

@@ -16,7 +16,7 @@ class SearchViewBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 16),
-            CustomAppBar(text: 'البحث', showBackButton: true,),
+            CustomAppBar(text: 'البحث', showBackButton: true, showNotificationIcon: true,),
             CustomSearchTextFormField(),
             SizedBox(height: 16),
             Text('نتائج البحث ', style: AppStyle.grey13Regular),

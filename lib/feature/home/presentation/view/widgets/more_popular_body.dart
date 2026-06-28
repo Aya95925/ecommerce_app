@@ -14,7 +14,7 @@ class MorePopularBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CustomAppBar(text: 'الأكثر مبيعًا', showBackButton: true),
+            CustomAppBar(text: 'الأكثر مبيعًا', showBackButton: true, showNotificationIcon: true,),
             SizedBox(height: 24),
            MorePopular(isShowMore: false,)
           ],

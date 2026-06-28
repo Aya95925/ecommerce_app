@@ -1,8 +1,7 @@
 import 'package:ecommerce_app/core/widgets/custom_appbar.dart';
 import 'package:ecommerce_app/core/widgets/custom_search_text_form_field.dart';
-import 'package:ecommerce_app/core/widgets/more_popular.dart';
 import 'package:ecommerce_app/feature/home/presentation/view/widgets/custom_grid_view_prosuct_card.dart';
-import 'package:ecommerce_app/feature/products/presentation/view/widget/custom_list_view_my_product_item.dart';
+
 import 'package:ecommerce_app/feature/products/presentation/view/widget/my_product.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +16,11 @@ class ProductViewBody extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 20),
-            CustomAppBar(text: 'المنتجات', showBackButton: false),
+            CustomAppBar(
+              text: 'المنتجات',
+              showBackButton: false,
+              showNotificationIcon: true,
+            ),
             SizedBox(height: 20),
             CustomSearchTextFormField(),
             SizedBox(height: 16),

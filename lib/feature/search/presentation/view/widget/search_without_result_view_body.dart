@@ -14,7 +14,7 @@ class SearchWithoutResultViewBody extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 16),
-          CustomAppBar(text: 'البحث', showBackButton: true,),
+          CustomAppBar(text: 'البحث', showBackButton: true, showNotificationIcon: true,),
           CustomSearchTextFormField(),
           SizedBox(height: 16),
           NotResult(),

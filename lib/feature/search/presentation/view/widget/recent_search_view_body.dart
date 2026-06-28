@@ -16,7 +16,7 @@ class RecentSearchViewBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 16),
-            CustomAppBar(text: 'البحث', showBackButton: true,),
+            CustomAppBar(text: 'البحث', showBackButton: true, showNotificationIcon: true,),
             SizedBox(height: 16),
             CustomSearchTextFormField(),
             SizedBox(height: 24),
